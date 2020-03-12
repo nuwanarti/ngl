@@ -13,7 +13,8 @@ const ColormakerScales = {
   '': '',
 
     // Sequential
-  OrRd: '[S] Orange-Red',
+  OrRd: '[S] Orange-Orange',
+  OrRd1: '[S] Orange-Red',
   PuBu: '[S] Purple-Blue',
   BuPu: '[S] Blue-Purple',
   Oranges: '[S] Oranges',
