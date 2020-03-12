@@ -26,8 +26,10 @@ class BfactorColormaker extends Colormaker {
 
   constructor (params: { sele?: string } & StuctureColormakerParams) {
     super(params)
+    console.log('came to bfactor color maker 1')
 
     if (!params.scale) {
+      console.log('came to bfactor color maker 2')
       this.parameters.scale = 'OrRd'
     }
 
@@ -50,11 +52,14 @@ class BfactorColormaker extends Colormaker {
     }
 
     this.bfactorScale = this.getScale()
+  console.log('came to bfactor color maker 3')
+
   }
 
   atomColor (a: AtomProxy) {
     return this.bfactorScale(a.bfactor)
   }
+  
 }
 
 ColormakerRegistry.add('bfactor', BfactorColormaker as any)
